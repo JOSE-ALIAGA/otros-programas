@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float a,b,x;
+    cout<<"Ingresa el valor de a: ";
+    cin>>a;
+    cout<<"Ingresa el valor de b: ";
+    cin>>b;
+    if (a==0)
+    {
+        if (b==0)
+            cout<<"Existen infinitas soluciones: ";
+        else
+            cout<<"No existe solución";
+    }
+    else
+    {
+        x=-b/a;
+        cout<<"La solución es: "<<x;
+    }
+    return 0;
+}
