@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    int dig=0;
+    cout<<"Ingrese un numero entero: ";
+    cin>>num;
+    while (num>0)
+    {
+        num = num/10;
+        dig = dig+1;
+    }
+    cout<<"la cantidad de digitos del numero entero es "<<dig;
+    return 0;
+}
