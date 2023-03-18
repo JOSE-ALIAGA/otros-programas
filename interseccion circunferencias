@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float x1,y1,x2,y2,r1,r2,d;
+    cout<<"Ingresar la coordenada en x del centro de la primera circunferencia: ";
+    cin>>x1;
+    cout<<"Ingresar la coordenada en y del centro de la primera circunferencia: ";
+    cin>>y1;
+    cout<<"Ingresar radio de la primera circunferencia: ";
+    cin>>r1;
+    cout<<"Ingresar la coordenada en x del centro de la segunda circunferencia: ";
+    cin>>x2;
+    cout<<"Ingresar la coordenada en y del centro de la segunda circunferencia: ";
+    cin>>y2;
+    cout<<"Ingresar radio de la segunda circunferencia: ";
+    cin>>r2;
+    d=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    if (d>r1+r2)
+        cout<<"Las circunferencias no se intersectan";
+    else
+        cout<<"Las circunferencias se intersectan";
+    return 0;
+}
