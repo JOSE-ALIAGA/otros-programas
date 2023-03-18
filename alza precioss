@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float monto,m,resta,mayor;
+    int dias;
+    int n=1;
+    cout<<"Ingresar cantidad de dias: ";
+    cin>>dias;
+    mayor=0;
+    while (dias>0)
+    {
+        m=monto;
+        cout<<"Ingresar precio del dolar del dia "<<n<<": ";
+        cin>>monto;
+        if (n==1)
+            m=monto;
+        resta=monto-m;
+        if (resta>mayor)
+            mayor=resta;
+        dias=dias-1;
+        n=n+1;
+    }
+    if (mayor==0)
+        cout<<"No hubo alzas";
+    else
+        cout<<"El mayor alza fue de "<<mayor<<" pesos";
+    return 0;
+}
